@@ -1,4 +1,4 @@
 FROM ubuntu:latest
 
-RUN echo "This is a test22" >>  /tmp/test.py
-
+RUN echo "Hello world!" >> test3.py
+RUN sudo apt-get update && apt-get install scapy
