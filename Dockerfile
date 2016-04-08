@@ -1,4 +1,6 @@
-FROM ubuntu:latest
+FROM ubuntu:14.04
 
-RUN echo "Hello world!" >> test3.py
-RUN sudo apt-get update && apt-get install scapy
+MAINTAINER JC Gonzalez <jcgonzalez@example.com>
+
+RUN apt-get update && apt-get install -y ruby ruby-dev
+RUN gem install sinatra
